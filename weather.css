@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(221, 176, 217);
+    background-image: url('https://th.bing.com/th/id/R.c7e95289c0f61afe2a6bc108a4d411de?rik=%2bJfASCU1N%2boZdg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fNuvIjjc.jpg&ehk=VLQEOBkaGM7MZJrD32ri1%2f39A44JIy7s1WhOqYa%2fCeA%3d&risl=&pid=ImgRaw&r=0');
+    font-size: 120%;
+}
+
+
+.card {
+    background: #aed0ead0;
+    color: rgb(239, 74, 74);
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: rgb(26, 25, 25);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: rgb(36, 34, 35);
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+}
+
+
+button:hover {
+    background: #e4a6d26b;
+}
+
+
+h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+}
+
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+.description {
+    text-transform: capitalize;
+    margin-right: 8px;
+}
+
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+
+.weather.loading:after {
+    visibility: visible;
+    content: "loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20;
+}
